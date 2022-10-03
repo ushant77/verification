@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Fortnite';
+  src: url('https://s3-us-west-1.amazonaws.com/bucket.cpabuild.com/assets2/fonts/BurbankBigCondensed-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	background: transparent;
+	min-height: auto !important;
+	top: 0px !important; 
+  text-align:center;
+  font-family: 'Fortnite', sans-serif !important;
+}
+#my-locker {
+  marghin:auto;
+      max-width: 800px;
+    border: 1px solid #333 !important;
+    background: #ccc !important;
+    -webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 98%);
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 98%);
+    background: #b83df2 !important;
+    background-color: #dedede !important;
+    background: -moz-linear-gradient(top, #b83df2 0%, #1ac2fe 100%) !important;
+    background: -webkit-linear-gradient(top, #b83df2 0%,#1ac2fe 100%) !important;
+    background: linear-gradient(to bottom, #b83df2 0%,#1ac2fe 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b83df2', endColorstr='#1ac2fe',GradientType=0 ) !important;
+    position: relative;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -ms-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+    transition: opacity .2s ease-out;
+    -webkit-box-shadow: 0 0 2px 0 #868686 !important;
+    -moz-box-shadow: 0 0 2px 0 #868686 !important;
+    box-shadow: 0 0 2px 0 #868686 !important;
+}
+h1{    color: #74cfcc;
+font-size: 46px !important;
+    text-shadow: -3px 1px 0px rgba(0,0,0,0.3)}
+p{    font-size: 22px !important;
+    letter-spacing: 0.8px;
+    text-shadow: -2px 1px 0px rgba(0,0,0,0.3) !important;
+color:white;width:85%;margin:auto;
+padding:15px;}
+.spinner {
+  --padding:5px;
+  --margin-top:15px;
+  --spinner-size: 3;
+  --line-color: #fff;
+  --line-alpha: 1;
+  --ring-color: ;
+  --ring-alpha: .3;
+  --ring-size: 10;
+
+  font-size: calc(var(--spinner-size) * 1em);
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+.spinner .line {
+  fill: none;
+  stroke: var(--line-color);
+  stroke-width: var(--ring-size);
+  opacity: var(--line-alpha);
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  transform: rotate3d(0, 0, 1, 0deg);
+  animation: 
+    2156ms spinner-arc ease-in-out infinite,
+    1829ms spinner-rotate linear infinite;
+}
+.spinner .ring {
+  fill: none;
+  stroke: var(--ring-color);
+  stroke-width: var(--ring-size);
+  opacity: var(--ring-alpha);
+}
+@keyframes spinner-rotate {
+  to { transform: rotate3d(0, 0, 1, 360deg); }
+}
+@keyframes spinner-arc {
+  from { stroke-dasharray: 0 150; stroke-dashoffset: 0; }
+  to { stroke-dasharray: 100 150; stroke-dashoffset: -140; }
+}
+.putong{
+  text-shadow: -2px 1px 0px rgba(255,255,255,0.6) !important;
+      display: block;
+    margin: 0 auto;
+    max-width: 92%;
+  font-size:22px;
+    overflow: visible;
+    padding: 0 12px;
+  margin-top:5px;
+    white-space: normal;    border: 0px solid #b9b9b9;
+      background: url() top left no-repeat #36e0da;    text-transform: uppercase;
+  color:black;
+  padding: 9px 0;
+      cursor: pointer;
+    text-decoration: none;
+}
+.putong a {
+  color:black;
+  text-decoration: none;
+}
+.putong:after{
+    background: #41c101;
+    border-radius: 4px;
+    color: #380000;
+  content:"Easy";
+    display: inline-block;
+    font-size: 12px;
+    padding: 3px 5px 3px;
+    margin: 0 0 -2px 12px;
+    vertical-align: top;
+}
+.putong:nth-child(2):after{
+    background:red;
+    border-radius: 4px;
+    color: #380000;
+  content:"Medium";
+    display: inline-block;
+    font-size: 12px;
+    padding: 3px 5px 3px;
+    margin: 0 0 -2px 12px;
+    vertical-align: top;
+}
+.putong:nth-child(4):after{
+  background:green;
+ content:"Hard";}
